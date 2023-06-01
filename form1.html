@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|Source+Sans+Pro:300,400">
+    <link rel="stylesheet" href="css/form1.css">
+</head>
+<body>
+        <div class="container">
+            <h1>Στοιχεία Εκπαιδευόμενου</h1>
+            <form name="form" method="post" action="https://www.test.gr" >
+                    <div class="input">
+                        <label for="lastname">Επώνυμο: </label>
+                        <input type="text" class="box" name="lastname" id="lastname" required>
+                    </div>
+                    <div class="input">
+                        <label for="firstname">Όνομα: </label>
+                        <input type="text" class="box" name="firstname" id="firstname" required>
+                    </div>
+                    <div class="input">
+                        <label for="birth-date">Ημ. Γέννησης: </label>
+                        <input type="date" class="box date" name="date" id="birth-date">
+                    </div>
+                    <div class="input">
+                        <label for="years">Έτος Σπουδών: </label>
+                        <input type="number" class="box" name="years" id="years">
+                    </div>
+                    <div class="input">
+                        <label for="email">E-mail: </label>
+                        <input type="email" class="box" name="email" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="password">Password: </label>
+                        <input type="password" class="box" name="password" id="password" minlength="8" required>
+                    </div>
+                    <input class="button" id="submit" type="submit" value="Αποστολή">
+            </form>
+        </div>
+</body>
+</html>
